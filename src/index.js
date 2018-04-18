@@ -5,12 +5,14 @@ const fs = require('fs');
 
 const defaults = {
   fileName: 'CHANGELOG.md',
-  type: 'long'
+  type: 'default'
 };
 
 const GITLOGCMD = {
-	short : "git log --graph --pretty=format:'%h -%d %s (%cr) <%an>' --abbrev-commit",
-	long: "git log"
+  raw: "git log --raw --abbrev-commit",
+  custom: "git log --pretty=format:'%h -%d %s (%ad) <%an>' --abbrev-commit",
+  oneline: "git log --oneline --abbrev-commit",
+  default: "git log --decorate --abbrev-commit"
 }
 
 export default function(opts) {
@@ -18,21 +20,22 @@ export default function(opts) {
     throw new Error('Git is not installed. Please install Git to use this module.');
   }
 
-  opts = Object.assign({}, opts, defaults);
+  opts = Object.assign({}, defaults, opts);
 
   if (!opts.filePath) {
     console.error('File path required to save:', opts.fileName);
     return false;
   }
 
-  exec(GITLOGCMD[opts.type], (err, stdout, stderr) => {
+  let cmd = GITLOGCMD[opts.type.toLowerCase()];
+  exec(cmd, (err, stdout, stderr) => {
     if (err || stderr) {
       console.error(err || stderr);
     } else {
-      fs.writeFileSync(path.resolve(opts.filePath, opts.fileName), stdout);
+      let out = `# ${opts.fileName.replace(/\.[^/.]+$/, '')}\n` + stdout;
+      fs.writeFileSync(path.resolve(opts.filePath, opts.fileName), out);
     }
-  })
-
+  });
 
   return true
 }

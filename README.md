@@ -44,11 +44,17 @@ npm i -D dump-git-logs
 ```
 
 ## Usage
-
 ```js
-import dumpGitLogs from "dump-git-logs"
+const dumpGitLogs = require('../../dump-git-logs').default;
+const path = require('path');
 
-dumpGitLogs() // true
+const options = {
+    fileName: 'CHANGELOG.md',
+    filePath: path.resolve(__dirname, '..'),
+    type: 'custom'
+}
+
+dumpGitLogs(options); // Will create a CHANGELOG.md file at the given path
 ```
 
 ## License

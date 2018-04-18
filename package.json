@@ -1,6 +1,6 @@
 {
   "name": "dump-git-logs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Dump raw git logs into a file",
   "main": "dist/index.js",
   "files": [
