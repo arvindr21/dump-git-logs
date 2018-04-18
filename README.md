@@ -74,13 +74,33 @@ List of options supported by `dump-git-logs`;
 * Required : false
 
 Available Types:
-|   Type  |                              Command                              |
-|:-------:|:-----------------------------------------------------------------:|
-| default | `git log --decorate --abbrev-commit`                              |
-|   raw   | `git log --raw --abbrev-commit`                                   |
-| oneline | `git log --oneline --abbrev-commit`                               |
-|  custom | `git log --pretty=format:'%h -%d %s (%ad) <%an>' --abbrev-commit` | 
 
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">default</td>
+<td style="text-align:center"><code>git log --decorate --abbrev-commit</code></td>
+</tr>
+<tr>
+<td style="text-align:center">raw</td>
+<td style="text-align:center"><code>git log --raw --abbrev-commit</code></td>
+</tr>
+<tr>
+<td style="text-align:center">oneline</td>
+<td style="text-align:center"><code>git log --oneline --abbrev-commit</code></td>
+</tr>
+<tr>
+<td style="text-align:center">custom</td>
+<td style="text-align:center"><code>git log --pretty=format:'%h -%d %s (%ad) &lt;%an&gt;' --abbrev-commit</code></td>
+</tr>
+</tbody>
+</table>
 You can find sample outputs for each type in the `sample-logs` folder.
 
 ## License
