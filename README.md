@@ -45,17 +45,43 @@ npm i -D dump-git-logs
 
 ## Usage
 ```js
-const dumpGitLogs = require('../../dump-git-logs').default;
+const DumpGitLogs = require('dump-git-logs').default;
 const path = require('path');
 
-const options = {
+const options = { // Check below for all the options
     fileName: 'CHANGELOG.md',
     filePath: path.resolve(__dirname, '..'),
     type: 'custom'
 }
 
-dumpGitLogs(options); // Will create a CHANGELOG.md file at the given path
+DumpGitLogs(options); // Will create a CHANGELOG.md file at the given path
 ```
+
+## Options 
+List of options supported by `dump-git-logs`;
+### fileName
+> Name of the file
+* Default: `CHANGELOG.md`
+* Required : false
+
+### filePath
+> File Path where the log needs to be dumped to
+* Required : true
+
+### type
+> Git log type
+* Default: `default`
+* Required : false
+
+Available Types:
+|   Type  |                              Command                              |
+|:-------:|:-----------------------------------------------------------------:|
+| default | `git log --decorate --abbrev-commit`                              |
+|   raw   | `git log --raw --abbrev-commit`                                   |
+| oneline | `git log --oneline --abbrev-commit`                               |
+|  custom | `git log --pretty=format:'%h -%d %s (%ad) <%an>' --abbrev-commit` | 
+
+You can find sample outputs for each type in the `sample-logs` folder.
 
 ## License
 
