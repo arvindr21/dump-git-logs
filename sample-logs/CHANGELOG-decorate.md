@@ -1,4 +1,18 @@
-**commit 0ff7075 (HEAD -> master, tag: v0.3.0, origin/master)**\
+**commit 6791829 (HEAD -> master, tag: v0.4.0)**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+`Date:   Fri Apr 20 13:17:02 2018 +0530`
+```
+Commit Message:     0.4.0
+```
+---
+**commit 0cbf2ef (origin/master)**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+`Date:   Fri Apr 20 13:15:15 2018 +0530`
+```
+Commit Message:     Update to streams and transformers, add more types. Fix: Parsing & Formatting
+```
+---
+**commit 0ff7075 (tag: v0.3.0)**\
 _Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
 `Date:   Wed Apr 18 12:20:13 2018 +0530`
 ```

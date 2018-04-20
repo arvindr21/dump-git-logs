@@ -1,3 +1,17 @@
+**commit 6791829b9fa02bda2460894f54712303ce71a60d**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+`Date:   Fri Apr 20 13:17:02 2018 +0530`
+```
+Commit Message:     0.4.0
+```
+---
+**commit 0cbf2ef96d30876e28247b5df9a52afe3359dd10**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+`Date:   Fri Apr 20 13:15:15 2018 +0530`
+```
+Commit Message:     Update to streams and transformers, add more types. Fix: Parsing & Formatting
+```
+---
 **commit 0ff707511618d611ecd7a6a3f99b11254ffe3fdc**\
 _Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
 `Date:   Wed Apr 18 12:20:13 2018 +0530`

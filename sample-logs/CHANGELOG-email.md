@@ -1,3 +1,18 @@
+From 6791829b9fa02bda2460894f54712303ce71a60d Mon Sep 17 00:00:00 2001\
+From: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>\
+`Date: Fri, 20 Apr 2018 13:17:02 +0530`
+```
+Subject: [PATCH] 0.4.0
+```
+---
+From 0cbf2ef96d30876e28247b5df9a52afe3359dd10 Mon Sep 17 00:00:00 2001\
+From: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>\
+`Date: Fri, 20 Apr 2018 13:15:15 +0530`
+```
+Subject: [PATCH] Update to streams and transformers, add more types. Fix:
+```
+---
+ Parsing & Formatting\
 From 0ff707511618d611ecd7a6a3f99b11254ffe3fdc Mon Sep 17 00:00:00 2001\
 From: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>\
 `Date: Wed, 18 Apr 2018 12:20:13 +0530`

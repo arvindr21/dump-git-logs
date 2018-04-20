@@ -1,3 +1,5 @@
+6791829 0.4.0\
+0cbf2ef Update to streams and transformers, add more types. Fix: Parsing & Formatting\
 0ff7075 0.3.0\
 ebfa2a6 fix dependency issue\
 78a7f8e 0.2.0\

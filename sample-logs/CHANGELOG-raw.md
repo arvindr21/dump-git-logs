@@ -1,3 +1,21 @@
+**commit 6791829**\
+tree 1da30c5fe682cd2c3554c8650ba5b6c5cc08b907\
+parent 0cbf2ef96d30876e28247b5df9a52afe3359dd10\
+_author Arvind Ravulavaru <arvind.ravulavaru@gmail.com> 1524210422 +0530_\
+_committer Arvind Ravulavaru <arvind.ravulavaru@gmail.com> 1524210422 +0530_\
+```
+Commit Message:     0.4.0
+```
+---
+**commit 0cbf2ef**\
+tree a25264f2cffb56f9a657c4291f1a656aa0b53274\
+parent 0ff707511618d611ecd7a6a3f99b11254ffe3fdc\
+_author Arvind Ravulavaru <arvind.ravulavaru@gmail.com> 1524210315 +0530_\
+_committer Arvind Ravulavaru <arvind.ravulavaru@gmail.com> 1524210315 +0530_\
+```
+Commit Message:     Update to streams and transformers, add more types. Fix: Parsing & Formatting
+```
+---
 **commit 0ff7075**\
 tree 0b3febf83360910f50fe2bc7797c6fea612954b6\
 parent ebfa2a6023d52377cecf2267ad3684b5acc0749d\

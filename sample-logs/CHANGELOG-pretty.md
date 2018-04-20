@@ -1,4 +1,6 @@
-0ff7075 - (HEAD -> master, tag: v0.3.0, origin/master) 0.3.0 (Wed Apr 18 12:20:13 2018 +0530) <Arvind Ravulavaru>\
+6791829 - (HEAD -> master, tag: v0.4.0) 0.4.0 (Fri Apr 20 13:17:02 2018 +0530) <Arvind Ravulavaru>\
+0cbf2ef - (origin/master) Update to streams and transformers, add more types. Fix: Parsing & Formatting (Fri Apr 20 13:15:15 2018 +0530) <Arvind Ravulavaru>\
+0ff7075 - (tag: v0.3.0) 0.3.0 (Wed Apr 18 12:20:13 2018 +0530) <Arvind Ravulavaru>\
 ebfa2a6 - fix dependency issue (Wed Apr 18 12:18:43 2018 +0530) <Arvind Ravulavaru>\
 78a7f8e - (tag: v0.2.0) 0.2.0 (Wed Apr 18 12:11:46 2018 +0530) <Arvind Ravulavaru>\
 44316ba - fix docs (Wed Apr 18 12:11:09 2018 +0530) <Arvind Ravulavaru>\

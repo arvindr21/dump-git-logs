@@ -1,3 +1,49 @@
+**commit 6791829b9fa02bda2460894f54712303ce71a60d**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+`Date:   Fri Apr 20 13:17:02 2018 +0530`
+```
+Commit Message:     0.4.0
+```
+---
+ package-lock.json | 2 +-\
+ package.json      | 2 +-\
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+---
+**commit 0cbf2ef96d30876e28247b5df9a52afe3359dd10**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+`Date:   Fri Apr 20 13:15:15 2018 +0530`
+```
+Commit Message:     Update to streams and transformers, add more types. Fix: Parsing & Formatting
+```
+---
+ README.md                            |  72 ++++++++++++--\
+ sample-logs/CHANGELOG-custom.md      |   8 --\
+ sample-logs/CHANGELOG-decorate.md    |  63 +++++++++++++\
+ sample-logs/CHANGELOG-default.md     | 166 +++++++++++++++++++++++++-------\
+ sample-logs/CHANGELOG-email.md       |  63 +++++++++++++\
+ sample-logs/CHANGELOG-full.md        |  63 +++++++++++++\
+ sample-logs/CHANGELOG-fuller.md      |  81 ++++++++++++++++\
+ sample-logs/CHANGELOG-oneline.md     |  17 ++--\
+ sample-logs/CHANGELOG-pretty.md      |   9 ++\
+ sample-logs/CHANGELOG-raw.md         | 178 ++++++++++++++++++++---------------\
+ sample-logs/CHANGELOG-short.md       |  54 +++++++++++\
+ sample-logs/CHANGELOG-userdefined.md |  63 +++++++++++++\
+ src/index.js                         |  48 +++++++---\
+ src/transformer.js                   |  96 +++++++++++++++++++\
+ test/index.js                        |  18 +++-\
+ 15 files changed, 848 insertions(+), 151 deletions(-)
+
+---
+ delete mode 100644 sample-logs/CHANGELOG-custom.md\
+ create mode 100644 sample-logs/CHANGELOG-decorate.md\
+ create mode 100644 sample-logs/CHANGELOG-email.md\
+ create mode 100644 sample-logs/CHANGELOG-full.md\
+ create mode 100644 sample-logs/CHANGELOG-fuller.md\
+ create mode 100644 sample-logs/CHANGELOG-pretty.md\
+ create mode 100644 sample-logs/CHANGELOG-short.md\
+ create mode 100644 sample-logs/CHANGELOG-userdefined.md\
+ create mode 100644 src/transformer.js\
 **commit 0ff707511618d611ecd7a6a3f99b11254ffe3fdc**\
 _Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
 `Date:   Wed Apr 18 12:20:13 2018 +0530`

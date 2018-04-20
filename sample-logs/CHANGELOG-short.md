@@ -1,3 +1,15 @@
+**commit 6791829**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+```
+Commit Message:     0.4.0
+```
+---
+**commit 0cbf2ef**\
+_Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
+```
+Commit Message:     Update to streams and transformers, add more types. Fix: Parsing & Formatting
+```
+---
 **commit 0ff7075**\
 _Author: Arvind Ravulavaru <arvind.ravulavaru@gmail.com>_\
 ```
