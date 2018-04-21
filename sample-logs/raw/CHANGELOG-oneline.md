@@ -1,0 +1,12 @@
+34a19b73d5827e7dc0f5238ecec12cd57c71e520 post publish commit
+6791829b9fa02bda2460894f54712303ce71a60d 0.4.0
+0cbf2ef96d30876e28247b5df9a52afe3359dd10 Update to streams and transformers, add more types. Fix: Parsing & Formatting
+0ff707511618d611ecd7a6a3f99b11254ffe3fdc 0.3.0
+ebfa2a6023d52377cecf2267ad3684b5acc0749d fix dependency issue
+78a7f8e3fc9d9886a4ac588bb1a473e6b6a36d70 0.2.0
+44316ba7531f9b7b592370fd987c40db293e9a4c fix docs
+b890dc6425076b887d9c27ec0844d07476b350d7 Update LICENSE
+b396c1105de52fcabfb937581a18c07f3f7934ee Create CODE_OF_CONDUCT.md
+e27ae7a4c7d33dc1dacc45c25fd3e5d353574aa2 Update readme
+6172a11b8bcecb1aa8cc30674f13d9281a9425f3 initial commit
+98d5089a8fee0821dc946bcb031de20a76a46d8c initial commit

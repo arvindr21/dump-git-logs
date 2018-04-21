@@ -51,25 +51,212 @@ const path = require('path');
 const options = { // Check below for all the options
     fileName: 'CHANGELOG.md',
     filePath: path.resolve(__dirname, '..'),
-    type: 'pretty'
+    type: 'oneline',
+    raw: false
 }
 
 DumpGitLogs(options); // Will create a CHANGELOG.md file at the given path
 ```
-Ouput for `pretty` type would be as follows
+`parsed` Ouput for `oneline` type would be as follows
 
-```
-0ff7075 - (HEAD -> master, tag: v0.3.0, origin/master) 0.3.0 (Wed Apr 18 12:20:13 2018 +0530) <Arvind Ravulavaru>
-ebfa2a6 - fix dependency issue (Wed Apr 18 12:18:43 2018 +0530) <Arvind Ravulavaru>
-78a7f8e - (tag: v0.2.0) 0.2.0 (Wed Apr 18 12:11:46 2018 +0530) <Arvind Ravulavaru>
-44316ba - fix docs (Wed Apr 18 12:11:09 2018 +0530) <Arvind Ravulavaru>
-b890dc6 - Update LICENSE (Wed Apr 18 12:10:13 2018 +0530) <Arvind Ravulavaru>
-b396c11 - Create CODE_OF_CONDUCT.md (Wed Apr 18 12:09:13 2018 +0530) <Arvind Ravulavaru>
-e27ae7a - Update readme (Wed Apr 18 12:06:26 2018 +0530) <Arvind Ravulavaru>
-6172a11 - initial commit (Wed Apr 18 11:51:13 2018 +0530) <Arvind Ravulavaru>
-98d5089 - initial commit (Wed Apr 18 11:05:40 2018 +0530) <Arvind Ravulavaru>
 
-```
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>34a19b73d5827e7dc0f5238ecec12cd57c71e520</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>post publish commit</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>6791829b9fa02bda2460894f54712303ce71a60d</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>0cbf2ef96d30876e28247b5df9a52afe3359dd10</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>Update to streams and transformers, add more types. Fix: Parsing &amp; Formatting</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>0ff707511618d611ecd7a6a3f99b11254ffe3fdc</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>ebfa2a6023d52377cecf2267ad3684b5acc0749d</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>fix dependency issue</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>78a7f8e3fc9d9886a4ac588bb1a473e6b6a36d70</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>44316ba7531f9b7b592370fd987c40db293e9a4c</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>fix docs</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>b890dc6425076b887d9c27ec0844d07476b350d7</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>Update LICENSE</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>b396c1105de52fcabfb937581a18c07f3f7934ee</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>Create CODE_OF_CONDUCT.md</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>e27ae7a4c7d33dc1dacc45c25fd3e5d353574aa2</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>Update readme</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>6172a11b8bcecb1aa8cc30674f13d9281a9425f3</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>initial commit</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>98d5089a8fee0821dc946bcb031de20a76a46d8c</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>initial commit</td>
+</tr>
+</tbody>
+</table>
+
+
 > You can find sample outputs for each type in the `sample-logs` folder.
 
 ## Options 
@@ -82,6 +269,16 @@ List of options supported by `dump-git-logs`;
 ### filePath
 > File Path where the log needs to be dumped to
 * Required : true
+
+### type
+> Git log type
+* Default: `default`
+* Required : false
+
+### raw
+> Should the output be parsed to a table view or not. Applicable only for pre-defined types except `userdefined`.
+* Default : false
+* Required : false
 
 ### type
 > Git log type
@@ -129,10 +326,6 @@ Available Types:
 <tr>
 <td style="text-align:center">decorate</td>
 <td style="text-align:left"><code>git log --decorate --abbrev-commit</code></td>
-</tr>
-<tr>
-<td style="text-align:center">pretty</td>
-<td style="text-align:left"><code>git log --pretty=format:'%h -%d %s (%ad) <%an>' --abbrev-commit</code></td>
 </tr>
 </tbody>
 </table>

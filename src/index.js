@@ -12,14 +12,13 @@ const defaults = {
 
 const GITLOGCMD = {
   default: 'git log --stat --summary',
-  raw: 'git log --format=raw --abbrev-commit',
-  short: 'git log --format=short --abbrev-commit',
-  full: 'git log --format=full --abbrev-commit',
-  fuller: 'git log --format=fuller --abbrev-commit',
-  email: 'git log --format=email --abbrev-commit',
-  oneline: 'git log --format=oneline --abbrev-commit',
-  decorate: 'git log --decorate --abbrev-commit',
-  pretty: "git log --pretty=format:'%h -%d %s (%ad) <%an>' --abbrev-commit",
+  raw: 'git log --format=raw',
+  short: 'git log --format=short',
+  full: 'git log --format=full',
+  fuller: 'git log --format=fuller',
+  email: 'git log --format=email',
+  oneline: 'git log --format=oneline',
+  decorate: 'git log --decorate'
 }
 
 export default function(opts) {
@@ -55,7 +54,11 @@ export default function(opts) {
   let cmd = GITLOGCMD[opts.type.toLowerCase()];
   const gitProcess = exec(cmd);
   const ws = fs.createWriteStream(path.resolve(opts.filePath, opts.fileName));
-  gitProcess.stdout.pipe(new Transformer()).pipe(ws);
+  if (opts.raw) {
+    gitProcess.stdout.pipe(ws);
+  } else {
+    gitProcess.stdout.pipe(new Transformer(opts)).pipe(ws);
+  }
 
   return true;
 }
